@@ -93,7 +93,7 @@ USE="X udev dbus lto lm-sensors ibm ieee1394 opencl opengl -systemd -nvenc -wayl
 ACCEPT_LICENSES="*"
 ACCEPT_KEYWORDS="~ppc64"
 INPUT_DEVICES="libinput"
-VIDEO_CARDS="radeon"
+VIDEO_CARDS="nouveau"
 GRUB_PLATFORMS="ieee1275"
 
 # WARNING: Changing your CHOST is not something that should be done lightly.
