@@ -41,11 +41,11 @@ hattrib -b :System:Library:CoreServices
 humount
 cd /mnt/cdrom/boot
 cp -a ppc64 /mnt/gentoo/boot/vmlinuz-6.12.41-gentoo
-cp -a ppc64.igz /mnt/gentoo/boot/initramfs-6.12.41-gentoo.img
+cp -a ppc64.igz /mnt/gentoo/boot/initramfs-6.12.41-gentoo
 cp -a grub /mnt/gentoo/boot/
-cp -a System-ppc64.map /mnt/gentoo/boot/System.map
-mkdir -p /mnt/gentoo/lib/modules
-cp -a /lib/modules/6.12.41-gentoo-ppc64-ppc /mnt/gentoo/lib/modules
+cp -a System-ppc64.map /mnt/gentoo/boot/System.map-6.12.41-gentoo
+mkdir -p /mnt/gentoo/lib/modules/6.12.41-gentoo
+cp -a /lib/modules/6.12.41-gentoo-ppc64-ppc /mnt/gentoo/lib/modules/6.12.41-gentoo
 cat > /mnt/gentoo/boot/grub/grub.cfg << EOF
 set default=0
 set gfxpayload=keep
