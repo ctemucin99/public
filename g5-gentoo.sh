@@ -54,7 +54,7 @@ insmod all_video
 
 menuentry 'Gentoo Linux (ppc64)' --class gnu-linux --class os {
 	linux /boot/vmlinuz-6.12.41-gentoo root=/dev/sda4 ro
-	initrd /boot/initramfs-6.12.41-gentoo.img
+	initrd /boot/initramfs-6.12.41-gentoo
 }
 EOF
 mount --types proc /proc /mnt/gentoo/proc
