@@ -31,6 +31,7 @@ wget https://raw.githubusercontent.com/ctemucin99/public/refs/heads/main/boot.zi
 unzip boot.zip -d /mnt/gentoo/boot
 rm boot.zip
 wget https://raw.githubusercontent.com/ctemucin99/public/refs/heads/main/modules.zip
+mkdir -p /mnt/gentoo/lib/modules
 unzip modules.zip -d /mnt/gentoo/lib/modules
 rm modules.zip
 hformat -l bootstrap /dev/sda2
