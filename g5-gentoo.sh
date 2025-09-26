@@ -42,17 +42,6 @@ hmount /dev/sda2
 hattrib -t tbxi -c UNIX :System:Library:CoreServices:BootX
 hattrib -b :System:Library:CoreServices
 humount
-cat > /mnt/gentoo/boot/grub/grub.cfg << EOF
-set default=0
-set gfxpayload=keep
-set timeout=3
-insmod all_video
-
-menuentry 'Gentoo Linux (ppc64)' --class gnu-linux --class os {
-	linux /boot/vmlinux-6.12.41-gentoo root=/dev/sda4 ro
-	initrd /boot/initramfs-6.12.41-gentoo
-}
-EOF
 mount --types proc /proc /mnt/gentoo/proc
 mount --rbind /sys /mnt/gentoo/sys
 mount --make-rslave /mnt/gentoo/sys
