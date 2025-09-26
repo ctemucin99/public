@@ -77,7 +77,6 @@ FFLAGS="${COMMON_FLAGS}"
 USE="X udev dbus lto lm-sensors ibm ieee1394 opencl opengl -systemd -nvenc -wayland -xwayland -qt5 -qt6 -kde -gnome"
 ACCEPT_LICENSES="*"
 ACCEPT_KEYWORDS="~ppc64"
-INPUT_DEVICES="libinput"
 VIDEO_CARDS="nouveau"
 GRUB_PLATFORMS="ieee1275"
 
